@@ -11,11 +11,11 @@ public class Trainer{
             } 
             else if (typeof(Dog).IsInstanceOfType(animal))
             {   
-                sounds += ((Dog) animal).Talk() + ", ";
+                sounds += ((Dog) animal).Say() + ", ";
             } 
             else if (typeof(Bird).IsInstanceOfType(animal))
             {
-                sounds += ((Bird) animal).Sing() + ", ";
+                sounds += ((Bird) animal).Say() + ", ";
             }
         }
 
@@ -34,13 +34,13 @@ public class Cat : Animal{
 }
 
 public class Dog : Animal{
-    public string Talk() {
+    public string Say() {
         return "woof";
     }
 }
 
 public class Bird  : Animal{
-    public string Sing() {
+    public string Say() {
         return "chirp";
     }
 }
