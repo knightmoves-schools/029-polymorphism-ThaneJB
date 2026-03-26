@@ -1,15 +1,16 @@
-﻿namespace knightmoves;
+namespace knightmoves;
 
 public class Trainer{
     public string Listen(Animal[] animals) {
         string sounds = "";
 
         
+
         
 
-        Animal[] manyanimals = {Cat, Dog, Bird};
+        
 
-        foreach(Animal animal in manyanimals)
+        foreach(Animal animal in animals)
         {
             sounds += animal.Say() + ", ";
         }
